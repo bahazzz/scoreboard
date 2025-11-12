@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.chicago-bulls p:nth-child(1) {
+    color: aqua;
+}
+
+.boston-celtics p:nth-child(1) {
+    color: greenyellow;
+}
+
+.chicago-bulls p:nth-child(2) {
+    font-size: 34px;
+}
+
+.boston-celtics p:nth-child(2) {
+    font-size: 34px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 10px auto;
+    
+}
+
+.chicago-bulls, .boston-celtics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    margin: 4px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.chicago-bulls.highlightOne {
+    box-shadow: 0 0 15px rgb(0, 255, 255);
+}
+
+.boston-celtics.highlightTwo {
+    box-shadow: 0 0 15px rgb(173, 255, 47);
+}
+
+
+.point-button {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+
+button {
+    background: #fff;
+    font-weight: bold;
+    border: 3px solid aqua;
+    margin-bottom: 8px;
+    padding: 6px;
+    border-radius: 16px;
+    white-space: nowrap;
+}
+
+.boston-celtics button {
+    border-color: greenyellow;
+}
+
+#reset-el {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #222;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+#reset-el:hover {
+    background: #222;
+    color: #fff;
+}
